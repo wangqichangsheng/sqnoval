@@ -1,0 +1,199 @@
+.listDetail {
+    //头部
+    /deep/ .van-nav-bar__content {
+      border-bottom: 1px solid rgb(196, 192, 192);
+      background-color: #fbfafa;
+    }
+    /deep/ .van-icon-arrow-left::before {
+      color: #23b383;
+      font-size: 23px;
+    }
+    /deep/ .van-nav-bar__title {
+      color: #23b383;
+    }
+  
+  /deep/ .van-nav-bar__text{
+      color: #23b383;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+    }
+    //详情头部
+    .listDetail-book {
+      margin-top: 49px;
+      width: 100%;
+      padding: 10px 0;
+      background-color: rgb(245, 244, 244);
+      .top {
+        width: 100%;
+        .left {
+          width: 35%;
+          height: 160px;
+          img {
+            height: 165px;
+            width: 100%;
+            border-radius: 5px;
+          }
+        }
+        .right {
+          width: 60%;
+          margin-left: 5%;
+          h5 {
+            margin: 0;
+            font-size: 17px;
+            margin-top: 5px;
+            color: rgb(34, 31, 31);
+            font-weight: 500;
+          }
+          span {
+            display: block;
+            color: #e2ab11;
+            margin: 15px 15px 15px 0;
+            font-size: 14px;
+            &:nth-child(4) {
+              height: 49px;
+              overflow: hidden;
+              i {
+                font-style: normal;
+                font-size: 8px;
+                background-color: rgb(176, 241, 233);
+                color: #23b383;
+                display: inline-block;
+                padding: 3px 10px;
+                margin-right: 5px;
+                border-radius: 16px;
+                margin-top: 7px;
+                line-height: 12px;
+              }
+            }
+            i {
+              font-style: normal;
+              color: #868d93;
+            }
+          }
+        }
+      }
+    }
+  
+    //简介
+    .present {
+      width: 100%;
+      h3 {
+        margin: 13px 0;
+        font-weight: 500;
+        color: #111111;
+      }
+      .content {
+        font-size: 14px;
+        line-height: 25px;
+        text-indent: 30px;
+        color: #77767c;
+        &.show {
+          height: 50px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+        }
+      }
+    }
+  
+    //相关推荐
+    .about {
+      margin: 10px 0 10px 20px;
+      padding: 0;
+      color: black;
+      font-weight: 500;
+    }
+    .recommend {
+      padding: 0 20px;
+      display: flex;
+      .recommend-item {
+        flex: 1;
+        &:nth-of-type(2){
+          margin: 0 10px;
+        }
+        .recommend-img {
+          height: 150px;
+          img {
+            width: 100%;
+            height: 150px;
+            border-radius: 5px;    
+          }
+        }
+        p {
+          font-size: 15px;
+          color: #111111;
+        }
+      }
+    }
+  
+    //热门短评
+    .comment {
+      width: 100%;
+      margin-bottom: 40px;
+      h3 {
+        margin: 10px 0;
+        font-weight: normal;
+        color: black;
+        font-weight: 500;
+      }
+      .box {
+        width: 100%;
+        ul {
+          li {
+            margin-bottom: 10px;
+            .top {
+              width: 100%;
+              img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+              }
+              span {
+                height: 50px;
+                line-height: 50px;
+                font-size: 16px;
+                margin-left: 10px;
+                color: #888288;
+              }
+            }
+            .content {
+              text-align: left;
+              margin-top: 0px;
+              margin-left: 50px;
+              color: #3e3d41;
+            }
+          }
+        }
+      }
+    }
+  
+    //底部按钮
+    .btn {
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      position: fixed;
+      bottom: 2px;
+      left: 0;
+      button {
+        width: 50%;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        font-size: 20px;
+        color: white;
+        background-color: rgb(152, 161, 154);
+        &:nth-child(2) {
+          background-color: rgb(74, 230, 113);
+        }
+        &.success {
+          background-color: #cccccc;
+        }
+      }
+    }
+  }

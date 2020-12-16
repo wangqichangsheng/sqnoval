@@ -1,0 +1,86 @@
+.bookshelf {
+    /deep/.van-search {
+      margin: 10px 20px;
+      padding: 0;
+      color: #999999;
+      /deep/.van-search_content--square {
+        border-radius: 10px;
+      }
+    }
+    /deep/.van-field_left-icon {
+      color: #999999;
+    }
+  
+    // 空书架，
+    .bookshelf-add {
+      .bookshelf-img {
+        width: 150px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 100px;
+        margin-bottom: 80px;
+        img {
+          width: 100%;
+        }
+      }
+      .bookshelf-word {
+        text-align: center;
+        color: #999999;
+      }
+      center {
+        margin: 150px 0 50px 0;
+      }
+      button {
+        width: calc(100% - 120px);
+        height: 40px;
+        text-align: center;
+        border: none;
+        border-radius: 10px;
+        background-color: #23b383;
+        color: white;
+        font-size: 16px;
+      }
+    }
+  
+    // 书架详情
+    .bookshelf-box {
+      margin-bottom: 50px;
+      .bookshelf-book {
+        padding: 0 20px;
+        .bookshelf-item {
+          float: left;
+          width: 31%;
+          height: 190px;
+          position: relative;
+          margin-right: 11px;
+          margin-bottom: 15px;
+          background-color: #fafafa;
+          border-radius: 5px;
+          overflow: hidden;
+          &:nth-of-type(3n) {
+            margin: 0px;
+          }
+          .bookshelf-img {
+            height: 130px;
+            img {
+              width: 100%;
+              height: 130px;
+              border-radius: 5px;
+            }
+          }
+          p {
+            font-size: 14px;
+            color: #111111;
+            padding: 0;
+            margin: 7px 0;
+          }
+          .delete {
+            font-size: 19px;
+            position: absolute;
+            right: 5px;
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }

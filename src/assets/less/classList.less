@@ -1,0 +1,116 @@
+.classList {
+  /deep/ .van-nav-bar__content {
+    border-bottom: 1px solid rgb(196, 192, 192);
+    background-color: #fbfafa;
+  }
+  /deep/ .van-icon-arrow-left::before {
+    color: #23b383;
+    font-size: 23px;
+  }
+  /deep/ .van-nav-bar__title {
+    color: #23b383;
+  }
+
+  //内容
+  .classList-books {
+    width: 100%;
+    margin-top: 55px;
+    background-color: rgb(252, 252, 252);
+    .more {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+      color: gray;
+      background-color: rgb(250, 245, 245);
+    }
+    .classList-books-list {
+      width: 100%;
+      ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        li {
+          width: 100%;
+          height: 130px;
+          margin-bottom: 20px;
+
+          .image {
+            width: 30%;
+            float: left;
+            height: 130px;
+            img {
+              width: 100%;
+              height: 100%;
+              display: block;
+              border-radius: 3px;
+            }
+          }
+          .right {
+            width: 65%;
+            float: left;
+            margin-left: 17px;
+            height: 130px;
+            h5 {
+              color: rgb(43, 40, 40);
+              margin: 2px 0  10px 0;
+              padding: 0;
+              font-size: 14px;
+              font-weight: 500;
+            }
+            p {
+              font-size: 12px;
+              margin: 10px 0;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 2;
+              overflow: hidden;
+              line-height: 20px;
+              color: rgb(136, 135, 135);
+            }
+            .major{
+              display: block;
+              width: 70px;
+              height: 15px;
+              line-height: 15px;
+              text-align: center;
+              font-size: 13px;
+              border-radius: 5px;
+              padding: 2px 10px;
+              color: rgb(46, 43, 43);
+              background-color: rgb(189, 181, 181);
+            }
+            .bottom {
+              span {
+                font-size: 11px;
+                height: 15px;
+                line-height: 15px;
+                border-radius: 19px;
+                padding: 2px 10px;
+                color: rgb(136, 135, 135);
+                &:nth-child(1) {
+                  padding-left: 0;
+                  padding-right: 0;
+                }
+                &:nth-child(2) {
+                  font-size: 8px;
+                  background-color: rgb(176, 241, 233);
+                  color: #23b383;
+                }
+                &:nth-child(3) {
+                  font-size: 8px;
+                  margin-right: 10px;
+                  background-color: rgb(216, 214, 214);
+                }
+              }
+            }
+          }
+        }
+      }
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    }
+  }
+}

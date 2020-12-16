@@ -1,0 +1,89 @@
+.class{
+    margin-bottom: 60px;
+    // background-color: #FBFAFA;
+    .class-option{
+        display: flex;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    .class-item {
+        flex: 1;
+        height: 50px;
+        line-height: 50px;
+        border-bottom: 1px solid rgb(196, 192, 192);
+        background-color: #FBFAFA;
+        position: relative;
+       
+        .item{
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            &.active{
+                font-weight: 600;
+                color: #23b383;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    bottom: 5px;
+                    border: 1px solid #23b383;
+                    background-color: #23b383;
+                }
+            }
+        }
+    }
+
+    .class-box{
+        width: 100%;
+        position: relative;
+    }
+    .class-books{
+        display: none;
+        &.shows{
+            display: block;
+            z-index: -10;
+        }
+    }
+    
+    .class-books-item{
+        background-color: #f6fcfa;
+
+        display: flex;
+        width: calc(~"50% - 50px");
+        height: 60px;
+        float: left;
+        padding: 10px 15px ;
+        margin:10px 10px 0 15px ;
+        border-radius: 5px;
+        &:nth-of-type(2n){
+            margin: 10px 0 0 0;
+        }
+    } 
+    .class-books-l{
+        flex: 1;
+    }
+    .class-books-name{
+        font-size: 15px;
+        color:#4b4b4b ;
+        margin-top: 5px;
+        margin-bottom: 17px;
+    }
+    .class-books-bookCount{
+        font-size: 13px;
+        color:#999999 ;
+    }
+    .class-img {
+        flex: 1;
+        width: calc(~"40%");
+        height:60px;
+        overflow: hidden;        
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
